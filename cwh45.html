@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GridCSS+MediaQuerry</title>
+        <style>
+            .contc{
+        display: grid;
+        grid-gap: 1rem;
+
+        grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer ';
+    }
+
+    .bdr {
+        border: 2px solid black;
+        padding: 10px 23px;
+        background-color: wheat;
+    }
+
+    nav {
+        grid-area: navbar;
+    }
+    section {
+        grid-area: section;
+    }
+    aside {
+        grid-area: aside;
+    }
+    footer {
+        grid-area: footer;
+        text-align: center;
+    }
+
+        @media only screen and (max-width:300px) {
+        body {
+            background-color: red;
+        }
+        .contc{
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer ';
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+        body {
+            background-color: blue;
+        }
+        .contc{
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer ';
+        }
+        aside{
+            display: none;
+        }
+    }
+        @media (min-width: 500px) and (max-width:800px) {
+        body {
+            background-color: yellow;
+        }
+        .contc{
+            grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer ';
+        }
+    }
+        @media (min-width: 800px) {
+        body {
+            background-color: green;
+        }
+    }
+        </style>
+    </head>
+    <body>
+        <div class="contc">
+            <nav class="bdr">
+                <span>Home</span>
+                <span>About</span>
+                <span>Services</span>
+                <span>Contact us</span>
+                <!-- Home About Contact Us  -->
+            </nav>
+            <section class="bdr">
+                <h2>Learn CSS in 2021</h2>
+            </section>
+            <aside class="bdr">
+                <h1>More about us</h1>
+            </aside>
+            <footer class="bdr">
+                <h1>Copyright &copy; MyOnlineLearning.com 2021 Allright Reserve</h1>
+            </footer>
+        </div>
+    </body>
+</html>

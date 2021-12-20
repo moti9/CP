@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scope|Conditional|js</title>
+        <script>
+            var str="This is a string";
+            var str="This is an another string";
+            console.log(str);
+            let m="v";
+            // let m="v"; // this will give an error
+            {
+                let m="V"; // this will not give an error bz let work as a block declearation properties
+                console.log(m);
+            }
+            console.log(m);
+
+            const a="This can't be changed";
+            // {
+            //     a="I want to change this but it can't be changed";
+            // }//Throwing Error
+            //a="I want to change this but it can't be changed";//Throwing Error
+            console.log(a);
+            let age=20;
+            // age=17;
+            age=17+1;
+
+            if (age>18) {
+                console.log("You can Vote\n");
+            }
+            else if (age==18) {
+                console.log("You are almost near to eligible to Vote\n");
+            }
+            else{
+                console.log("You can't Vote\n");
+            }
+            for (let index = 1; index <= age; index++) {
+                if (index>18) {
+                    console.log(`You can Vote ${index}`);
+                }
+                else if (index==18) {
+                    console.log("You are almost near to eligible to Vote\n");
+                    console.log("You are almost near to eligible to Vote\n");
+                    console.log("You are almost near to eligible to Vote\n");
+                }
+                else{
+                    console.log("You can't Vote\n"+index);
+                    // console.log("You can't Vote\n"+index);
+                    // console.log("You can't Vote\n"+index);
+                }
+            }
+
+            // const temp=30;
+            let temp=36;
+            // temp/=10;
+            // temp%=10;
+            temp%=temp;
+            switch (temp) {
+                case 3:
+                    console.log("The value is 3\n");
+                    break;
+                case 6:
+                    console.log("The value is 6\n");
+                    break;
+                case 0:
+                    console.log("The value is 0\n");
+                    break;
+            
+                default:
+                    break;
+            }
+        </script>
+        <style>
+            li{
+                list-style: square;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li>Item-1</li>
+                <li>Item-2</li>
+                <li>Item-3</li>
+                <li>Item-4</li>
+                <li>Item-5</li>
+                <li>Item-6</li>
+                <li>Item-7</li>
+            </ul>
+        </div>
+    </body>
+</html>

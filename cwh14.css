@@ -1,0 +1,32 @@
+* {
+  margin: 1rem;
+  padding: 1rem;
+}
+body {
+  color: navajowhite;
+  background-color: rgb(96, 95, 101);
+  min-height: fit-content;
+  max-height: fit-content;
+  max-width: fit-content;
+  min-width: fit-content;
+}
+h3 {
+  color: deeppink;
+  background-color: gray;
+  border-radius: 10rem;
+
+  text-align: center;
+  font-size: 2rem;
+}
+p {
+  color: purple;
+  background-color: #ccc;
+  border: springgreen 2px solid;
+  border-radius: 1.5rem;
+
+  text-align: center;
+  font-weight: bold;
+}
+:hover{
+    color: #000080;
+}

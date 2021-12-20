@@ -1,0 +1,78 @@
+* {
+  margin: 5px;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.hbox {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  background-color: rgb(7, 245, 165);
+  text-align: center;
+  text-shadow: 2px;
+  border-radius: 10px;
+  color: blueviolet;
+  box-sizing: content-box;
+  border: 2px solid deeppink;
+}
+.fname,
+.lname,
+.eds {
+  background-color: azure;
+  color: seagreen;
+  font-weight: bolder;
+}
+.region,
+.gd,
+.csn,
+.edd,
+.ia,
+.em,
+.adm,
+.gdd {
+  background-color: #f2f2f2;
+  color: blue;
+}
+input [type="text"],
+input [type="email"],
+input [type="number"],
+input [type="password"],
+input [type="date"],
+select,
+textarea {
+  width: 98%;
+  padding: 12px;
+  border: 2px solid #f2f2f2;
+  border-radius: 5px;
+  margin: 10px;
+  height: fit-content;
+}
+select:hover {
+  color: darkblue;
+  font-weight: bolder;
+  border-color: aquamarine;
+}
+.submit {
+  background-color: whitesmoke;
+  text-align: center;
+  width: 100%;
+  color: seagreen;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 2px solid deeppink;
+}
+.submit:hover {
+  background-color: whitesmoke;
+  font-size: large;
+  font-weight: bold;
+  color: navy;
+}
+.edd,
+.gd,
+.eds,
+.gdd{
+    border: 2px solid aqua;
+    border-radius: 10px;
+}

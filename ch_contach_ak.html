@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="ch_contach_ak.css">
+</head>
+
+<body>
+    <div class="form">
+        <div class="hbox" id="hb">
+            <h1>$ Contact Form $</h1>
+            <h5>Please fill the required details.</h5>
+        </div>
+        <hr>
+        <br>
+        <div class="nm">
+            <form>
+                <label for="fnm" class="fname"> First Name*: </label>
+                <input type="text" id="fnm" placeholder="Enter your first name..." required>
+                <br>
+                <br>
+                <label for="lnm" class="lname"> Last Name*: </label>
+                <input type="text" id="lnm" placeholder="Enter your last name..." required>
+        </div>
+        <br>
+        <fieldset>
+            <legend><b class="gdd">Gender*: </b></legend>
+            <input type="radio" value="Male" name="gender" id="Male"><b>Male</b>
+            <input type="radio" value="Female" name="gender" id="Female"><b>Female</b>
+        </fieldset>
+        <p>
+            <b class="adm">Address: </b><textarea type="text" name="add" id="add" cols="30" rows="10"
+                placeholder="Enter your current address..."></textarea>
+        </p>
+        <p>
+            <b class="em">E-mail*: </b><input type="email" name="email" id="email">
+        </p>
+        <label for="region" class="region"><b> Region/Country*: </b></label>
+        <select name="region" id="region" class="opt">
+            <option value="o1" class="o1">Select</option>
+            <option value="o2" class="o2">India</option>
+            <option value="o3" class="o3">USA</option>
+            <option value="o4" class="o4">Australia</option>
+            <option value="o5" class="o5">Japan</option>
+            <option value="o6" class="o6">Brajil</option>
+            <option value="o7" class="o7">Canada</option>
+            <option value="oo" class="oo">Other</option>
+        </select>
+        <input type="text" name="color" id="color" style='display: none;' required>
+        <fieldset>
+            <legend class="eds"><b>Education Details: </b></legend>
+            <fieldset>
+                <legend class="edd"><b>Highest Education: </b></legend>
+                <input type="radio" name="hse"><b>SSC</b>
+                <input type="radio" name="hse"><b>HSC</b>
+                <input type="radio" name="hse"><b>UGC/PG</b>
+
+            </fieldset>
+            <b class="csn">College/School: </b>
+            <input type="text" class="csname" placeholder="IIIT Agartala">
+            <p><b class="ia">Institute Address: </b>
+                <textarea name="adds" id="" cols="30" rows="10" placeholder="Current Institute Address...."></textarea>
+            <fieldset>
+                <legend class="gd"><b>Grades: </b></legend>
+                <p><b>SSC: </b>
+                    <input type="text/number" placeholder="(Percent/CGPA)-(Year)">
+                </p>
+                <p><b>HSC: </b>
+                    <input type="text/number" placeholder="(Percent/CGPA)-(Year)">
+                </p>
+                <p><b>UGC: </b>
+                    <input type="text/number" placeholder="(Percent/CGPA)-(Year)">
+                </p>
+                <p><b>PG: </b>
+                    <input type="text/number" placeholder="(Percent/CGPA)-(Year)">
+                </p>
+            </fieldset>
+            </p>
+        </fieldset>
+        <input type="submit" value="Submit" class="submit">
+        </form>
+    </div>
+</body>
+
+</html>

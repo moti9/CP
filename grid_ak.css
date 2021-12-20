@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: blanchedalmond;
+}
+.container {
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 0.5rem;
+  text-align: center;
+  color: aqua;
+  grid-auto-rows: minmax(10rem, auto);
+  grid-auto-columns: minmax(10rem, auto);
+  line-height: 8;
+}
+.item {
+  background-color: lightcoral;
+  border: 0.2rem green solid;
+  border-radius: 0.5rem;
+}
+#it2{
+    grid-row-start: 2;
+    grid-row-end: 6;
+}

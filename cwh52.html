@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Js|Arrays|Objects</title>
+        <script>
+            let myVar1=36;
+            let myVar2="Motiv";
+            let myVar3=true;
+            let myVar4=null;
+            let myVar5=undefined;
+
+            let emp={
+                name:"Motiv",
+                enroll:"20UICS096",
+                college:"IIIT Agartala",
+                salary:96,
+                channel:"Dakshm Creation",
+            }
+
+            console.log(emp);
+            console.log(emp.name);
+            console.log(emp[`name`]);
+
+            let arr=[96,63,85,"MotiV",undefined,"UndefinedRelation"];
+            arr.pop();
+            console.log(arr);
+            
+            let arr2= new Array(63,96,85,"UndefinedRelation","MotiV");
+            arr2=arr2.sort();
+            arr2.push("I Love You MV");
+            console.log(arr2);
+        </script>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .contc{
+                /* width: fit-content; */
+                display: block;
+                height: auto;
+                width: 8vw;
+                background-color: red;
+                padding: 0 4px 4px 0;
+            }
+            .content{
+                background-color: #345692;
+                padding: 1px 4px 4px 0;
+                /* margin: 0 1px 1px 0; */
+                /* width: 7vw; */
+                /* width: fit-content; */
+                /* display: flex; */
+                /* display: block; */
+            }
+            ul{
+                list-style: square;
+                background-color: #341278;
+                margin: 2px;
+                color: deeppink;
+                font-family: cursive;
+                /* padding: 1px 4px 4px 1px; */
+                /* background-size: ; */
+                /* display: block; */
+                /* display: flex; */
+                /* flex-direction: column; */
+                /* align-items: center; */
+                /* justify-content: center; */
+                /* width: auto; */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contc">
+            <div class="content">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

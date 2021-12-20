@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mediaquery_CSS</title>
+        <style>
+            .box{
+                font-size: 70px;
+                text-align: center;
+                background-color: #ff0000;
+                color: #ffff;
+                display: none;
+            }
+            @media (max-width:300px){
+                #box-1{
+                    display: block;
+                    background-color: cyan;
+                    font-size: 50px;
+                    padding: 5px;
+                }
+            }
+            @media (max-width:140px){
+                #box-1{
+                    display: block;
+                    background-color: cyan;
+                    font-size: 40px;
+                    padding: 5px;
+                }
+            }
+            @media (max-width:125px){
+                #box-1{
+                    display: block;
+                    background-color: cyan;
+                    font-size: 30px;
+                    padding: 5px;
+                }
+            }
+            @media (max-width:100px){
+                #box-1{
+                    display: block;
+                    background-color: cyan;
+                    font-size: 12px;
+                    padding: 5px 5px 5px 5px ;
+                }
+            }
+
+            @media (max-width:500px) and (min-width:300px) {
+                #box-2{
+                    display: block;
+                    background-color: purple;
+                    /* font-size: 50px;
+                    padding: 5px; */
+                }
+                
+            }
+            @media (max-width:800px) and (min-width:500px) {
+                #box-3{
+                    display: block;
+                    background-color: green;
+                    /* font-size: 50px;
+                    padding: 5px; */
+                }
+                
+            }
+            @media (max-width:1000px) and (min-width:800px) {
+                #box-4{
+                    display: block;
+                    background-color: black;
+                    /* font-size: 50px;
+                    padding: 5px; */
+                }
+                
+            }
+            @media (min-width:1000px) {
+                #box-1,#box-2,#box-3,#box-4{
+                    display: block;
+                    background-color: deeppink;
+                    /* font-size: 50px;
+                    padding: 5px; */
+                    font-family: cursivemm1;
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box" id="box-1">I am an I-Phone</div>
+        <div class="box" id="box-2">I am a Tablet</div>
+        <div class="box" id="box-3">I am a Computer</div>
+        <div class="box" id="box-4">I am a wide screen computer</div>
+    </body>
+</html>

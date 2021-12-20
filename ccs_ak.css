@@ -1,0 +1,61 @@
+h1 {
+  color: blueviolet;
+  background-color: aqua;
+}
+h2 {
+  color: blueviolet;
+  background-color: hotpink;
+}
+h3 {
+  color: blueviolet;
+  background-color: burlywood;
+}
+h4 {
+  color: blueviolet;
+  background-color: mediumspringgreen;
+}
+h5 {
+  color: blueviolet;
+  background-color: violet;
+}
+
+h6 {
+  background-color: midnightblue;
+  color: red;
+}
+p {
+  background-color: aquamarine;
+}
+/* ul {
+  math-style: none;
+} */
+ul,
+li,
+li en {
+  /* backface-visibility: visible; */
+  background-color: forestgreen;
+  /* text-emphasis-color: white; */
+  color: orangered;
+  font-weight: bolder;
+  /* font-size: 110%; */
+}
+/* * class{
+    color: orange;
+} */
+body {
+  padding: 10px;
+  border-color: blue;
+  columns: none;
+  color-adjust: blue;
+  background-color: green;
+}
+* {
+  font-size: 120%;
+}
+*a {
+  background-color: pink;
+  color: blueviolet;
+}
+line {
+  bottom: blue;
+}

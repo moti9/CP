@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check_validation</title>
+    <script type="text/javascript">
+        function validation_form() {
+            if (document.contact_form.contact_name.value == "") {
+                alert("Please fill your name in the box!!");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <style>
+        body{
+            text-align: center;
+            border: 2px solid aquamarine;
+            border-radius: 10px;
+        }
+        .hh{
+            color: aqua;
+            border: 1px solid green;
+            border-radius: 5px;
+            background-color: magenta;
+        }
+        .mm{
+            color:palegreen;
+            border: 1px solid hotpink;
+            border-radius: 5px;
+            background-color: azure;
+            font-weight: bolder;
+        }
+        .ss{
+            border: 1px solid navy;
+            border-radius: 5px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" name="contact_form" onsubmit="return validation_form(this)">
+        <h1 class="hh">Please enter your name</h1>
+        <p class="mm">Your Name: <input type="text" name="contact_name"></p>
+        <p class="ss"><input type="submit" name="send" value="send details"></p>
+    </form>
+</body>
+
+</html>

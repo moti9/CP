@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Navigation</title>
+    </head>
+    <style>
+        body{
+            /* background-image: url(/img/mvv.jpg); */
+            /* background-repeat: no-repeat; */
+            background-image: url(/img/coder\ img4.jpg);
+            
+        }
+        .navbar{
+            background-color: deeppink;
+            padding: 0;
+            margin: 2px;
+            border-radius: 10px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+        }
+        .navbar li{
+            padding: 5px 5px;
+            margin: 2px 2px;
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            background-color: #000;
+            color: rgb(255,255,255);
+
+            border-radius: 10px;
+        }
+        .navbar li a:hover{
+            font-family: cursive;
+            color: green;
+        }
+        .search{
+            float: right;
+            padding: 3px 3px;
+            margin: 3px 30px;
+        }
+        .search:hover{
+            /* width: 5px;
+             */
+             /* height: 10px; */
+             background-color: green;
+        }
+        .navbar input{
+            border:2px solid black;
+            border-radius: 15px;
+            padding: 3px 10px;
+        }
+    </style>
+    <body>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="#"> Home</a>
+                    </li>
+                    <li>
+                        <a href="#"> About</a>
+                    </li>
+                    <li>
+                        <a href="#"> Services</a>
+                    </li>
+                    <li>
+                        <a href="#"> Contact us</a>
+                    </li>
+                    <li>
+                        <a href="#"> more</a>
+                    </li>
+                    <div class="search">
+                        <input
+                            type="text"
+                            name="search"
+                            id="search"
+                            placeholder="search in this website"
+                        >
+                    </div>
+                </ul>
+            </nav>
+        </header>
+    </body>
+</html>

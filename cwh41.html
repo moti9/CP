@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GridCSS</title>
+        <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body p,h1,h2,h3,h4,h5,h6{
+    /* background: linear-gradient(to bottom, #12c2e9, #c471ed, #f64f59); */
+    background: linear-gradient(to left,#f64f59,#12c2e9,#c471ed,#adadad,#ccc,#ff0f,#0ff,#ff00);
+        }
+        .grid{
+
+            background: linear-gradient(to left,deeppink,red,green,navy,blue,pink,tomato,brown,black,hotpink,gray,whitesmoke,skyblue,lightblue,aqua,aquamarine);
+
+            display: grid;
+            /* grid-template-rows: 1fr 2fr 3fr; */
+            /* grid-template-rows: repeat(10,20px); */
+            grid-template-rows:200px 400px 600px 800px 1000px 1200px 1000px 800px 600px 400px 200px;
+            /* grid-template-rows:100px 200px 300px 400px 500px 600px 500px 400px 300px 200px 100px; */
+            grid-template-columns: 1fr 2fr 3fr 4fr 5fr 6fr 5fr 4fr 3fr 2fr 1fr;
+            /* grid-template-rows: 5fr 4fr 3fr 2fr 1fr; */
+            /* grid-gap: 2px; */
+            height: 500px;
+        }
+
+        .box{
+            /* background-color: #00f; */
+            /* border: 2px solid deeppink; */
+            height: 100%;
+        }
+        #b1,#b11{
+            /* color: whitesmoke; */
+            background-color: rgb(218, 215, 215);
+            
+            color: rgb(218, 215, 215);
+        }
+        #b2,#b10{
+            /* color: whitesmoke; */
+            background-color: rgb(5, 225, 5);
+            
+            color: rgb(5, 225, 5);
+        }
+        #b3,#b9{
+            /* color: whitesmoke; */
+            background-color: deeppink;
+            color: deeppink;
+
+        }
+        #b4,#b8{
+            /* color: whitesmoke; */
+            background-color: rgb(255, 255, 5);
+            
+            color: rgb(255, 255, 5);
+        }
+        #b5,#b7{
+            /* color: whitesmoke; */
+            background-color: rgb(255, 0, 5);
+            
+            color: rgb(255, 0, 5);
+        }
+        #b6{
+            background-color: navy;
+            color: navy;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div class="box" id="b1">this is bod-1</div>
+            <div class="box" id="b2">this is bod-2</div>
+            <div class="box" id="b3">this is bod-3</div>
+            <div class="box" id="b4">this is bod-4</div>
+            <div class="box" id="b5">this is bod-5</div>
+            <div class="box" id="b6">this is bod-6</div>
+            <div class="box" id="b7">this is bod-7</div>
+            <div class="box" id="b8">this is bod-8</div>
+            <div class="box" id="b9">this is bod-9</div>
+            <div class="box" id="b10">this is bod-10</div>
+            <div class="box" id="b11">this is bod-11</div>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero perspiciatis quia deleniti voluptatibus possimus tempora sequi voluptatum! Ipsum minus modi tenetur! Id earum sapiente voluptate nobis iste explicabo quis harum dolorum. Soluta perferendis perspiciatis veniam commodi modi recusandae quas placeat, nesciunt, magnam cumque, molestias velit nemo deserunt alias officiis est quaerat ducimus in quos non tempore. Vitae placeat vero possimus. Quibusdam expedita quidem, iste, fuga iure qui reprehenderit error iusto perferendis unde exercitationem eos doloremque? Vitae animi ipsam cupiditate voluptatum eum repellendus dolores corporis, natus molestias. Fuga animi modi nemo quidem veritatis, libero ea rerum. Consectetur autem cumque, necessitatibus consequuntur nihil sapiente illo itaque commodi quo dicta maiores!</p>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, doloribus? Excepturi tempora ea illum architecto sequi mollitia saepe inventore animi minus voluptatum vitae quis nobis rerum neque, quisquam quidem reprehenderit!</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis aut iusto repudiandae quo ducimus iure aliquid porro veritatis placeat, id eaque odit sint facilis esse vitae cumque quod rerum recusandae.</h2>
+        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A voluptatibus ea iste vero molestiae aspernatur, vel esse magni explicabo atque pariatur dicta neque officiis nesciunt tempore ipsa libero aut placeat.</h3>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptas voluptate consequatur praesentium officiis qui perspiciatis blanditiis ipsam, ducimus quisquam corporis alias perferendis, recusandae est totam sit aspernatur illo incidunt.</h4>
+        <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente rem autem aperiam voluptatibus quas recusandae! Libero esse commodi perspiciatis, fuga voluptatibus, modi ut beatae eius minus dolores vel impedit. Saepe.</h5>
+        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente omnis reiciendis magni repudiandae dolor numquam officia dignissimos quis provident sit optio fugiat cumque, tempora laudantium doloremque! Earum quis ipsam recusandae!</h6>
+        <h1 style="text-align: center; font-family: cursive; color: deeppink;">!! 🙏🙏 THANKYOU 🙏🙏 !!</h1>
+        <h1 style="text-align: center; font-family: cursive; color: navy;">....😇😇....</h1>
+    </body>
+</html>

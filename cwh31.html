@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Selectors</title>
+        <style>
+            h1{
+                background-color: blueviolet;
+                font-family: cursive;
+                text-align: center;
+                border-radius: 2rem;
+            }
+            
+            div p{
+                background-color: #ff0f;
+                color: green;
+
+                font-family: cursive;
+                text-align: center;
+
+                border-radius: 1rem;
+            }
+
+            /* div > p{
+                background-color: #ff0f;
+                color: green;
+                font-family: cursive;
+                text-align: center;
+                border-radius: 1rem;
+            } */
+
+            div + p{
+                background-color: #ff0f;
+                color: green;
+
+                font-family: cursive;
+                text-align: center;
+
+                border-radius: 1rem;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h1>This is more on selectors</h1>
+        <div class="contc">
+            <div class="row">
+                <p>This is paragraph</p>
+                <div class="rowin">
+                    <p>This is internal paragraph</p>
+                    <ul>
+                        <li><p>This is another internal paragraph</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p>This is outer paragraph</p>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BoxShadowandTextShadow</title>
+        <style>
+            .contc{
+                display: flex;
+
+            }
+
+            .card{
+                padding: 25px;
+                margin: 20px 12px;
+                border: 2px solid fuchsia;
+                background-color: violet;
+
+                /* box-shadow: offset:x offset:y blurr spread color; */
+
+                /* box-shadow: 5px 5px green; */
+                /* box-shadow: -5px -5px 10px green; */
+                /* box-shadow: -5px 5px 10px green; */
+                /* box-shadow: 5px -5px 10px green; */
+                box-shadow: -7px -5px 10px 3px green;
+                /* box-shadow:inset -7px -5px 80px 3px green; */
+            }
+            .card h2{
+                text-shadow: 2px 2px 1px white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="contc">
+            <div class="card" id="card-1">
+                <h2>This is C++ course</h2>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae voluptate exercitationem nisi odio, doloremque optio dignissimos aspernatur, non voluptates aliquam velit quidem repellat nihil magnam aliquid? Blanditiis vitae natus ipsum accusantium excepturi, ipsam quo laboriosam id!
+            </div>
+            <div class="card" id="card-2">
+                <h2>This is HTML Course</h2>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae voluptate exercitationem nisi odio, doloremque optio dignissimos aspernatur, non voluptates aliquam velit quidem repellat nihil magnam aliquid? Blanditiis vitae natus ipsum accusantium excepturi, ipsam quo laboriosam id!
+            </div>
+            <div class="card" id="card-3">
+                <h2>This is CSS Course</h2>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae voluptate exercitationem nisi odio, doloremque optio dignissimos aspernatur, non voluptates aliquam velit quidem repellat nihil magnam aliquid? Blanditiis vitae natus ipsum accusantium excepturi, ipsam quo laboriosam id!
+            </div>
+        </div>
+    </body>
+</html>

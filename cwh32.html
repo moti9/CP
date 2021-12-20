@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Attribute and child pseudo celectors</title>
+        <style>
+            .contc{
+                /* margin: 30px 20px;
+                 */
+                 display: block;
+                 width: 250px;
+                 margin: auto;
+            }
+
+            input{
+                display: block;
+            }
+
+            input[type="text"]
+            {
+                padding: 20px;
+                border: 2px solid forestgreen;
+            }
+
+            input[type="email"]
+            {
+                padding: 20px;
+                border: 2px solid fuchsia;
+            }
+
+            a[target]{
+                /* font-family: cursive;
+                 */
+                 font-size: 30px;
+                color: aqua;
+                background-color: #ff0;
+            }
+
+            a[target="_self"]{
+                /* font-family: cursive;
+                 */
+                 font-size: 30px;
+                color: navy;
+                background-color: #ff0;
+            }
+
+            /* li:nth-child(6)
+            {
+                color: aquamarine;
+                
+                background-color: black;
+                font-family: cursive;
+            } */
+
+            /* li:nth-child(2n+0)
+            {
+                color: cyan;
+                
+                background-color: grey;
+                font-family: cursive;
+            } */
+
+            /* li:nth-child(2n+1)
+            {
+                color: green;
+                
+                background-color: red;
+                font-family: cursive;
+            } */
+
+            li:nth-child(odd)
+            {
+                color: black;
+                
+                background-color: yellow;
+                font-family: cursive;
+            }
+
+            li:nth-child(even)
+            {
+                color: deeppink;
+                
+                background-color: gray;
+                font-family: cursive;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contc">
+            <h1>
+                <a href="http://google.com" target="_blank">Go to Google</a>
+            </h1>
+            <h1>
+                <a href="http://youtube.com" target="_self">Go to YouTube</a>
+            </h1>
+            <form action="" class="form-control">
+                <input type="text" placeholder="Enter your name">
+                <input type="email" placeholder="Enter your email">
+                <input type="password" placeholder="Enter your password">
+                <input type="submit" value="Submit">
+            </form>
+            <ul>
+                <li class="item" id="item-1">Item1</li>
+                <li class="item" id="item-2">Item2</li>
+                <li class="item" id="item-3">Item3</li>
+                <li class="item" id="item-4">Item4</li>
+                <li class="item" id="item-5">Item5</li>
+                <li class="item" id="item-6">Item6</li>
+                <li class="item" id="item-7">Item7</li>
+                <li class="item" id="item-8">Item8</li>
+                <li class="item" id="item-9">Item9</li>
+                <li class="item" id="item-1">Item1</li>
+                <li class="item" id="item-2">Item2</li>
+                <li class="item" id="item-3">Item3</li>
+                <li class="item" id="item-4">Item4</li>
+            </ul>
+        </div>
+    </body>
+</html>

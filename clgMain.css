@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*           NAVBAR           */
+
+nav {
+  background: rgb(2, 2, 136);
+  padding: 5px 20px;
+  color: #ffffff;
+
+  display: flex;
+
+  /* position: sticky; */
+}
+
+nav ul,
+.content ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav a:hover{
+  text-decoration: underline;
+  background: rgb(2, 2, 136);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  font-size: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5px;
+}
+
+nav ul a {
+  padding: 20px 10px;
+}
+
+.clgLogo {
+  font-size: 25px;
+  flex: auto;
+  padding: 10px 5px;
+}
+
+
+.item {
+  position: relative;
+  font-size: 20px;
+  margin: 5px 15px;
+  background: rgb(4, 138, 138);
+  border: 0.1rem solid #00ffff;
+  border-radius: 1rem;
+}
+
+/*        HOME PAGE PART               */
+
+.web-info img {
+  height: 150px;
+  width: 150px;
+  background: navy;
+  border-radius: 200rem;
+}
+
+.web-info {
+  position: relative;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px auto;
+
+  margin: 50px auto;
+}
+.web-info h1,
+p {
+  padding: 5px 5px;
+}
+
+/*                      Procuct                 */
+
+.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+.cp,
+.web-dev,
+.app-dev,
+.m-learn {
+  position: relative;
+  height: auto;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px auto;
+
+  border: 2px solid rgb(168, 166, 166);
+  background: rgb(192, 192, 192);
+  border-radius: 1rem;
+  margin: 10px 10px;
+}
+
+.product img {
+  height: 100px;
+  width: 150px;
+  margin: 5px auto;
+}
+
+.btn {
+  position: relative;
+  display: flex;
+  font-size: 20px;
+
+  background: rgb(194, 14, 110);
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
+
+  border-radius: 1rem;
+  padding: 2px 2px;
+
+  cursor: pointer;
+}
+.btn:hover {
+  background: rgb(252, 62, 94);
+}
+
+.btn img {
+  height: 20px;
+  width: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+footer {
+  margin-top: 20px;
+  height: auto;
+  width: 100%;
+  background: #000000;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+@media all and (max-width: 565px) {
+  .product {
+    flex-direction: column;
+  }
+
+  .cp,
+  .web-dev,
+  .app-dev,
+  .m-learn {
+    width: 90%;
+  }
+}

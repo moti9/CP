@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*           NAVBAR           */
+
+nav {
+  background: rgb(2, 2, 136);
+  padding: 5px 20px;
+  color: #ffffff;
+
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background: rgb(2, 2, 136);
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  font-size: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5px;
+}
+
+nav ul a {
+  padding: 20px 10px;
+}
+
+.clgLogo {
+  font-size: 25px;
+  flex: auto;
+  padding: 10px 5px;
+}
+
+.item {
+  position: relative;
+  font-size: 20px;
+  margin: 5px 15px;
+  background: rgb(4, 138, 138);
+  border: 0.1rem solid #00ffff;
+  border-radius: 1rem;
+}
+
+.center {
+  text-align: center;
+}
+
+/*        HOME PAGE PART               */
+
+.clgpic {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+}
+.clgpic img {
+  width: 32%;
+  height: auto;
+  margin: 10px auto;
+  border-radius: 10px;
+
+  border-bottom: 5px solid rgb(153, 153, 153);
+  border-right: 5px solid rgb(153, 153, 153);
+}
+.clgpic img:hover {
+  width: 32.5%;
+
+  border-bottom: 5px solid rgb(73, 160, 160);
+  border-right: 5px solid rgb(73, 160, 160);
+}
+
+.about-clgchapter,
+.about-clg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  margin: 20px auto;
+}
+.about-clgchapter img {
+  width: 15%;
+
+  height: auto;
+  margin: 10px auto;
+  padding: 10px 10px;
+  border-radius: 200px;
+
+  background: #c4c2c2;
+
+  border-bottom: 5px solid rgb(255, 0, 0);
+  border-right: 5px solid rgb(8, 8, 80);
+  border-top: 5px solid rgb(10, 71, 10);
+  border-left: 5px solid #ff1493;
+}
+.about-clgchapter img:hover {
+  /* width: 15.5%; */
+  transform: rotate(2deg);
+}
+
+.about-clg p,
+.about-clgchapter p {
+  padding: 20px 30px;
+}
+
+@media all and (max-width: 465px) {
+  .about-clgchapter img {
+    width: 50%;
+  }
+  .about-clg p,
+  .about-clgchapter p {
+    padding: 15px 20px;
+  }
+}
+
+@media all and (max-width: 1050px) {
+  .clgpic {
+    flex-direction: column;
+  }
+  .clgpic img {
+    width: 80%;
+  }
+}
+

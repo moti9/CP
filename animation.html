@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="animation.css">
+    <style>
+        .ig1 {
+            width: 350px;
+            height: 350px;
+            border: 2px transparent red;
+            margin: 0;
+            position: absolute;
+            margin-left: 685px;
+            margin-top: -200px;
+
+        }
+
+        .g1 {
+            width: 350px;
+            height: 200px;
+            margin: 0;
+            position: absolute;
+            margin-left: 685px;
+            margin-top: -520px;
+
+        }
+
+        .ig2 {
+            width: 350px;
+            height: 350px;
+            border: 2px transparent red;
+            margin: 0;
+            position: absolute;
+            padding-bottom: 2px;
+            margin-top: -430px;
+            margin-left: -435px;
+        }
+
+        .g2 {
+            width: 350px;
+            height: 200px;
+            margin: 0;
+            position: absolute;
+            padding-bottom: 2px;
+            margin-top: -170px;
+            margin-left: -435px;
+        }
+
+        .vid {
+            margin-top: -1px;
+
+        }
+
+        video {
+            height: 100px;
+            width: 600px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: initial;
+        }
+
+        .strip {
+            width: 100%;
+            background-color: turquoise;
+            animation: an1 2s ease-in 0s infinite reverse;
+            margin-top: 70px;
+        }
+
+        .str {
+            width: 100%;
+            height: 10px;
+            background-color: mediumvioletred;
+            animation-name: an1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            animation-direction: middle;
+        }
+
+        @keyframes an1 {
+            from {
+                width: 0;
+                background-color: red;
+            }
+
+            to {
+                width: 100%;
+                background-color: navy;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </div>
+
+    <div class="main_header">
+        <div class="center-div">
+        </div>
+        <div class="main_header1">
+            <div class="center-div1"></div>
+        </div>
+        <div class="ani">
+            <div class="text">
+                <p class="p1"> !! HAPPY.... </p>
+                <p class="p2"> RAKHI... </p>
+                <p class="p3">TO YOU..</p>
+                <p class="p4">DEAR DI !!.</p>
+            </div>
+        </div>
+        <div class="wrapper"> -->
+            <div class="ig1"><img src="img/rakhi1.jpg" alt=""></div>
+            <div class="ig2"><img src="img/rakhi2.jpg" alt=""></div>
+            <div class="vid"><video src="video/rakhi ani.mp4" autoplay muted loop></video></div>
+            <div class="g2"><img src="img/g2.gif" alt=""></div>
+            <div class="g1"><img src="img/g1.gif" alt=""> </div>
+
+        </div>
+        <div class="strip">
+            <div class="str"></div>
+
+        </div>
+        <div class="chakra1">
+            <div class="chakra">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </div>
+        </div>
+</body>
+
+</html>

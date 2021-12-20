@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 15px 30px;
+  font-size: 12px;
+  padding: 8px;
+}
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 150px 20px;
+  border: 3px solid lightblue;
+  border-radius: 4px;
+}
+input [type="text"],
+input [type="email"],
+input [type="number"],
+input [type="password"],
+input [type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #f2f2f2;
+  border-radius: 5px;
+  margin: 10px;
+}
+select:hover {
+  background-color: aquamarine;
+}
+fieldset {
+  background-color: #fff;
+  border: 2px solid aquamarine;
+  border-radius: 5px;
+}
+.main_heading {
+  text-align: center;
+  background-color: aquamarine;
+  color: navy;
+}
+.c_info {
+  text-align: center;
+  background-color: ghostwhite;
+  color: blue;
+}
+.sub {
+  /* text-align: center; */
+  background-color: gainsboro;
+  font-weight: bolder;
+  font-size: medium;
+  color: hotpink;
+  /* padding:right; */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+.sub:hover {
+  background-color: blue;
+}
+.p_info {
+  text-align: center;
+  background-color: aquamarine;
+  font-weight: bolder;
+  font-size: medium;
+  color: magenta;
+  padding: 12px 20px;
+}
+.opt {
+  font-size: 12px;
+  font-weight: bolder;
+  color: navy;
+}
